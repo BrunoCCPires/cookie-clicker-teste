@@ -1,0 +1,1 @@
+Basic cookie clicker implementation with a cookie button and multiplier upgrade. Click the cookie to earn cookies, then spend them on multipliers to earn more cookies per click.

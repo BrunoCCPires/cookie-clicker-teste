@@ -1,42 +1,54 @@
-#root {
-  max-width: 1280px;
+.cookie-clicker {
+  text-align: center;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.stats {
+  font-size: 1.2rem;
+  margin: 1rem 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cookie-button {
+  font-size: 8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s;
+  padding: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.cookie-button:hover {
+  transform: scale(1.1);
 }
 
-.card {
-  padding: 2em;
+.cookie-button:active {
+  transform: scale(0.95);
 }
 
-.read-the-docs {
-  color: #888;
+.shop {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 2px solid #ccc;
+}
+
+.shop-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.shop-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.shop-button:hover:not(:disabled) {
+  background: #45a049;
 }
